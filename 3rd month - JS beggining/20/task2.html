@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const userAsk = prompt('Введите короткое слово/словосочетание'); 
+        const letterNum = (userAsk.length);
+        const stars = '*'.repeat(letterNum + 3);
+        const result = `${stars}\n* ${userAsk} *\n${stars}`;
+        alert(result);
+    </script>
+</body>
+</html>

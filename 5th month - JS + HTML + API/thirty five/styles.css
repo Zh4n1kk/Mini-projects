@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,button,input,optgroup,select,textarea,p,blockquote,th,td {
+    background: rgba(0, 0, 0, 0.92);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    width: 75px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+img {
+    user-select: none;
+}
+.header_img img{
+    width: 50vw;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header_img {
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+.pokecard {
+    border: 1px solid white;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pokecard:hover {
+    background-color: rgba(255, 255, 255, 0.22);
+    transition: 0.2s;
+}
+.pokecard img {
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.pokecard_id_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokecard_id {
+    font-weight: 400;
+}
+
+.pokecard-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    gap: 10px;
+}
+
+.pokecard_name {
+    text-transform: capitalize;
+    font-family: "Sigmar", sans-serif;
+    letter-spacing: 1px;
+}
+
+.pokecard_type {
+    text-transform: uppercase;
+    text-align: center;
+    width: 90px;
+    border-radius: 3px;
+}
+
+.pokecard_type_wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.poketype_grass {
+    background-color: #78c850;
+}
+
+.poketype_poison {
+    background-color: #a040a0;
+}
+
+.poketype_fire {
+    background-color: #f08030;
+}
+
+.poketype_water {
+    background-color: #6890f0;
+    color: white;
+}
+
+.poketype_bug {
+    background-color: #a8b820;
+}
+
+.poketype_flying {
+    background-color: #a890f0;
+    color: white;
+}
+
+.poketype_ground {
+    background-color: #e0c068;
+}
+
+.poketype_electric {
+    background-color: #f8d030;
+    color: black;
+}
+
+.poketype_fairy {
+    background-color: #ee99ac;
+}
+
+.poketype_fighting {
+    background-color: #c03028;
+}
+
+.poketype_psychic {
+    background-color: #f85888;
+}
+
+.poketype_rock {
+    background-color: #b8a038;
+}
+
+.poketype_steel {
+    background-color: #b8b8d0;
+}
+
+.poketype_ice {
+    background-color: #98d8d8;
+    color: black;
+}
+
+.poketype_ghost {
+    background-color: #705898;
+    color: white;
+}
+
+.poketype_dragon {
+    background-color: #7038f8;
+    color: white;
+}
+
+.poketype_dark {
+    background-color: #705848;
+    color: white;
+}
+
+.poketype_normal {
+    background-color: #a8a878;
+    color: black;
+}
+
+.poketype_stellar {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.poketype_unknown {
+    background-color: #68a090;
+    color: white;
+}
+
+.pokemon-window_background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+}
+
+.pokemon-window {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.989);
+    width: 550px;
+    height: 550px;
+    color: black;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.pokemon-window-wrapper {
+    display: none;
+}
+
+.pokemon-window {
+    display: flex;
+}
+
+.pokemon-window_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.pokemon-window img {
+    width: 250px;
+}
+
+.pokemon-window_img_wrap {
+    width: 50%;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 3px solid black;
+}
+
+.flex_row {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+

@@ -1,0 +1,86 @@
+.price
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: #333333
+    gap: 20px
+    padding: 50px 0 50px 0
+    &_main
+        +mobile-first-media(810px)
+            background: #F8FBFF
+    &_btn
+        border: none
+        background: $main_color
+        width: 300px
+        height: 60px
+        font-family: 'Montserrat'
+        color: #333
+        font-weight: 500
+        font-size: 20px
+    h2
+        font-weight: 600
+        font-size: 30px
+        +mobile-first-media(810px)
+            font-size: 20px
+    h3
+        font-weight: 600
+        font-size: 24px   
+        +mobile-first-media(810px)
+            display: none 
+    &_card
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 60px
+        justify-content: space-between
+        text-align: center   
+        padding: 45px
+        &:hover
+            border: 2px solid $main_color
+        +mobile-first-media(810px)
+            padding: 0px
+            gap: 30px
+            &:hover
+                border: 0px
+        &:nth-child(1)
+            +mobile-first-media(810px)
+                display: none
+        &:nth-child(3)
+            +mobile-first-media(810px)
+                display: none
+        &_wrap
+            display: flex
+            justify-content: space-between
+            gap: 30px
+            +mobile-first-media(1240px)
+                flex-wrap: wrap
+            +mobile-first-media(810px)
+                justify-content: center
+
+    &_text
+        font-weight: 600
+        font-size: 24px
+        +mobile-first-media(810px)
+            font-weight: 500
+            font-size: 18px
+        &_number
+            font-weight: 600
+            font-size: 30px
+        &_mobile
+            display: none
+            +mobile-first-media(810px)
+                display: block
+                border-bottom: 1px solid black
+
+    &_subtext
+        font-weight: 400
+        font-size: 16px
+        +mobile-first-media(810px)
+            font-weight: 400
+            font-size: 16px
+.price_subtext_wrap
+        display: flex
+        flex-direction: column
+        gap: 50px
+        +mobile-first-media(810px)
+            gap: 15px

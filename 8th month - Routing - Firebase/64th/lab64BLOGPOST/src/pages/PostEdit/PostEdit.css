@@ -1,0 +1,9 @@
+.add_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add_input {
+    height: 50px;
+}

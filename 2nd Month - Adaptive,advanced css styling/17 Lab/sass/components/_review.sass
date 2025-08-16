@@ -1,0 +1,55 @@
+.review
+    background: $main_color
+    padding: 50px 0 50px 0
+    font-weight: 400
+    font-size: 16px
+    h2
+        font-weight: 600
+        font-size: 30px
+        text-align: center
+    &_card
+        display: flex
+        flex-direction: column
+        gap: 15px
+        max-width: 450px
+        height: 265px
+        padding-top: 60px
+        &:nth-child(1)
+            +mobile-first-media(800px)
+                display: none
+        &:nth-child(3)
+            +mobile-first-media(640px)
+                display: none
+
+        &_wrap
+            display: flex
+            justify-content: space-between
+            width: 100%
+            gap: 20px
+            margin-bottom: 120px
+            +mobile-first-media(800px)
+                justify-content: center
+    &_subtext
+        border-bottom: 1px solid black
+        width: fit-content
+    &_name
+        font-weight: 600
+        font-size: 24px
+        +mobile-first-media(640px)
+            font-weight: 500
+            font-size: 18px
+    &_date
+        display: flex
+        gap: 10px
+    &_btn
+        background: transparent
+        border: 1px solid black
+        width: 250px
+        height: 50px
+        color: #333
+        font-size: 20px
+        font-weight: 500
+        font-family: 'montserrat'
+        &_wrap
+            display: flex
+            justify-content: center

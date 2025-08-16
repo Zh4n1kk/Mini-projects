@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body html {
+    overflow-x: hidden;
+}
+
+.rainbow {
+    padding-top: 139px;
+    font-size: 8vw; 
+    text-transform: uppercase;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    animation-name: color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes color {
+    0% {color: red}
+    25% {color: blue}
+    50% {color:pink}
+    75% {color:purple}
+    100% {color:yellow}
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    max-width: 100%;
+    object-fit:cover;
+}
+
+.star {
+    position: absolute;
+    z-index: 2;
+    width: 10vw;
+    animation-name: sin_move, star_spin;
+    animation-duration: 15s;  
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes sin_move {
+    0% { left: 0%; top:10%; }
+    10% { left:10%; top:20%; }
+    20% { left:20%; top:10%; }
+    30% { left:30%; top:20%; }
+    40% { left:40%; top:10%; }
+    50% { left:50%; top:20%; }
+    60% { left:60%; top:10%; }
+    70% { left:70%; top:200px; }
+    80% { left:80%; top:50px; }
+    90% { left:80%; top:200px; }
+}
+
+@keyframes star_spin {
+    0% { transform: rotate3d(0, 1, 0, 0deg); }
+    100% { transform: rotate3d(0, 1, 0, 360deg); }
+}
+
+.mario_run {
+    position: relative;
+    width: 6vw; 
+    display: block;
+    animation-name: mario_running, pulse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mario_running {
+    from { left:0%;}
+    to { left:90%;}
+}
+
+@keyframes pulse {
+    0% {transform: scale(100%); transform: skew(150deg, 170deg);}
+    10% {transform: scale(200%); transform: skew(180deg, 190deg)}
+    20% {transform: scale(100%); transform: skew(150deg, 170deg)}
+    30% {transform: scale(200%); transform: skew(180deg, 190deg)}
+    40% {transform: scale(100%); transform: skew(150deg, 170deg)}
+    50% {transform: scale(200%); transform: skew(180deg, 190deg)}
+    60% {transform: scale(100%); transform: skew(150deg, 170deg)}
+    70% {transform: scale(200%); transform: skew(180deg, 190deg)}
+    80% {transform: scale(100%); transform: skew(150deg, 170deg)}
+    90% {transform: scale(200%); transform: skew(180deg, 1900deg)}
+}

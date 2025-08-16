@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+	<script src="chessBoardGen.js"></script>
+    <script>
+        const chessSize = prompt('Какого размера X на X доску вы хотите?');
+		const sizeNum = Number(chessSize)
+		if (chessSize === null || chessSize.trim === '' || isNaN(chessSize)) {
+			//
+		} else if (sizeNum > 0) {
+			createChessboard(chessSize);
+		}
+		</script>
+</body>
+</html>

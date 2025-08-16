@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="jQuery.js"></script>
+    </head>
+    <body>
+        <div id="cart-items">
+            <div class="item">Milk 1 l.<span class="qty"> x2</span></div>
+            <div class="item">Cola 1.5 l. <span class="qty"> x1</span></div>
+            <div class="item">Bread<span class="qty"> x2</span></div>
+            <div class="item">Cheese<span class="qty"> x1</span></div>
+            <div class="item">Chocolate bar<span class="qty"> x3</span></div>
+          </div>
+        <script>
+            const classy = $(".item");
+            $(classy[1]).remove()
+            const elem = $("<div></div>").append("Canned fish").addClass('item')
+            const qtyy = $("<span></span>").append(' 4x').addClass('qty')
+            elem.append(qtyy)
+            $(classy[4]).replaceWith(elem)
+        </script>
+    </body>
+</html>

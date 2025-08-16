@@ -1,0 +1,75 @@
+.header
+    background-image: linear-gradient(0.87deg, rgba(2, 55, 135, 0.9) 0.69%, rgba(81, 38, 174, 0.4736) 100.48%, rgba(38, 92, 174, 0.0102906) 100.49%, rgba(195, 195, 196, 0.00520833) 100.5%, #76A6EF 100.51%), url('../images/promo_bg.png')
+    background-size: cover
+    // max-width: 1200px
+    width: 100%
+    h1
+        font-family: 'Righteous'
+        font-size: 19px
+        font-weight: 400
+        color: white
+    span
+        color: #FFC839
+        font-weight: 400
+        font-family: 'Righteous'
+    a
+        font-family: 'Roboto'
+        font-size: 18px
+        font-weight: 400
+        color: white
+    &_nav
+        display: flex
+        justify-content: space-between
+        padding-top: 40px
+        padding-bottom: 40px
+        &_bar
+            display: flex
+            gap: 75px
+            +mobile-first(750px)
+                flex-direction: column
+// PROMO
+.header_promo
+    color: white
+    max-width: 792px
+    padding-top: 200px
+    padding-bottom: 200px
+    h2
+        font-weight: 700
+        font-size: 60px
+        +mobile-first(400px)
+            font-size: 40px
+    h3
+        font-weight: 400
+        font-size: 29px
+        +mobile-first(400px)
+            font-size: 20px
+
+#hamburger-menu:checked ~ ul
+    display: flex
+
+input
+    opacity: 0
+    visibility: none
+
+#hamburger-menu
+    display: flex
+    +mobile-first(750px)
+        display: none
+
+.burger 
+    width: 35px
+    height: 5px
+    background-color: white
+    margin: 6px 0
+    display: none
+    +mobile-first(750px)
+        display: block
+
+.hamburger-menu
+    padding-right: 15px
+    display: none
+    flex-direction: column
+    align-items: flex-end
+    +mobile-first(750px)
+    display: flex
+        padding: 15px

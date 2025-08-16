@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+th {
+    text-align: center;
+    border: 1px solid black;
+}
+td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+td img {
+    width: 250px;
+    max-height: 250px;
+}

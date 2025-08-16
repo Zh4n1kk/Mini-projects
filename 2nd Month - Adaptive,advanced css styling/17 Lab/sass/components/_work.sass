@@ -1,0 +1,50 @@
+.work
+    margin-top: 95px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &_number
+        display: flex
+        font-weight: 300
+        font-size: 50px
+        width: 0px
+        box-sizing: border-box
+        +mobile-first-media(650px)
+            width: 66px
+    h1
+        font-weight: 600
+        font-size: 30px
+        text-align: center
+        color: #333333
+    &_card
+        display: flex
+        gap: 75px
+        +mobile-first-media(650px)
+            gap: 40px
+            align-items: center
+        &_info
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            max-width: 600px
+            gap: 20px
+    &_text
+        font-weight: 500
+        font-size: 20px
+        +mobile-first-media(650px)
+            font-weight: 400
+            font-size: 16px
+    &_subtext
+        font-weight: 400
+        font-size: 16px
+        +mobile-first-media(650px)
+            display: none
+    &_grid
+        margin-top: 60px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 50px
+        +mobile-first-media(650px)
+            grid-template-columns: repeat(1, 1fr)
+
+    

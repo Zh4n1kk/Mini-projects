@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let correctAnswer = 0
+        let wrongAnswer = 0
+        while(true) {
+            const number1 = parseInt(Math.random() * 10); 
+            const number2 = parseInt(Math.random() * 10); 
+            const answer = prompt('What is: ' + number1 + ' * ' + number2);
+            const overall = number1 * number2
+            if (answer === null) {
+                alert('Cancelled' + '\n' + 'You made ' + correctAnswer + ' correct answers!' + '\n' + 'And ' + wrongAnswer + ' wrong answers')
+                break;
+            } else if (answer != overall){
+                alert('You are wrong!')
+                wrongAnswer += 1
+            } else if ( answer == overall ){
+                alert('You are correct!')
+                correctAnswer += 1
+            } else {
+                alert('Something went wrong!' + '\n' + 'You made ' + correctAnswer + ' correct answers!' + '\n' + 'And ' + wrongAnswer + ' wrong answers')
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

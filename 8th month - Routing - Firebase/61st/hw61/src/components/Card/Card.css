@@ -1,0 +1,25 @@
+.Card {
+    width: 248px;
+    background-color: rgb(29, 29, 29);
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 10px 10px 0px 0px;
+    font-size: 16px;
+    transition: 0.05s;
+}
+
+.Card:hover {
+    border: 1px solid white;
+    transition: 0.05s;
+}
+
+.Card_header {
+    font-weight: 1000;
+    text-align: center;
+    padding: 5px;
+}
+
+.Card_body {
+    min-height: 100px;
+    text-align: left;
+    padding: 5px;
+}

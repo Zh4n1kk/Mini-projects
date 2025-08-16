@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function circle() {
+            const randomNum = Math.floor(Math.random() * 250 + 1);
+            const numParse = Number(randomNum)
+            const circle = document.createElement('div');
+            var colorArray = ["#FF6633","#FFB399","#FF33FF","#FFFF99","#00B3E6","#E6B333","#3366E6","#999966","#809980","#E6FF80","#1AFF33","#999933","#FF3380","#CCCC00","#66E64D","#4D80CC","#FF4D4D","#99E6E6","#6666FF"];
+            const getColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+            circle.style.width = `${numParse}px`;
+            circle.style.height = `${numParse}px`;
+            circle.style.backgroundColor = `${getColor}`;
+            circle.style.borderRadius = "50%";
+            circle.style.position = "absolute";
+            circle.style.top = `${Math.random() * window.innerHeight}px`; // Random Y position
+            circle.style.left = `${Math.random() * window.innerWidth}px`; // Random X position
+            
+            document.body.appendChild(circle);
+        }
+
+        circle()
+    </script>
+</body>
+</html>

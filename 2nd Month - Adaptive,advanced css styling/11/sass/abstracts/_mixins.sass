@@ -1,0 +1,13 @@
+@mixin flex-center
+    align-items: flex-start
+    align-content: center
+    justify-content: center
+
+@mixin text-style($size: 16px, $weight: 400) 
+    font-size: $size
+    font-weight: $weight
+
+
+@mixin mobile-first-media($max-width: 500px)
+    @media screen and (max-width: $max-width)
+        @content 

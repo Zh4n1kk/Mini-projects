@@ -1,0 +1,47 @@
+.container {
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+.form {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.form input {
+    border: none;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.form button {
+    border: none;
+    border-bottom: 1px solid;
+    width: 75px;
+}
+
+.mapCols {
+    margin-top: 15px;
+    padding: 5px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.item_name {
+    width: 100px;
+}
+
+.item_cost {
+    width: 50px
+}
+
+.total_spent {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 24px;
+}

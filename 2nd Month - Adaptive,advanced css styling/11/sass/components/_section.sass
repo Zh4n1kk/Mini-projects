@@ -1,0 +1,143 @@
+/* WHITE */
+
+.section
+    display: flex
+    flex-direction: column
+    max-width: 1146px
+    @include flex-center
+    
+     
+    &-list-wrap
+        p
+            font-size: 16.2px
+
+    &_purple, &_darkpurple
+        color: white
+        display: flex
+        flex-direction: column
+        max-width: 1146px
+        @include flex-center
+
+
+    &_darkpurple
+        color: white
+        display: flex
+        flex-direction: column
+        @include flex-center
+
+
+    &-list-wrap 
+        display: flex
+        flex-wrap: wrap
+        gap: 20px
+        justify-content: space-between
+
+    &-list-wrap_darkpurple 
+        display: flex
+        flex-direction: row
+        gap: 20px
+        justify-content: space-between
+        p
+            max-width: 290px
+            font-size: 16.2px
+
+    &-list_darkpurple 
+        color: white
+        display: flex
+        flex-direction: row
+        width: auto
+        max-width: 1192px
+        justify-content: space-between
+        flex-wrap: wrap
+        gap: 20px
+        +mobile-first-media(600px)
+            flex-direction: column 
+        li 
+            border: 1px solid rgba(255, 255, 255, 0.2)
+            display: flex
+            flex-direction: column
+            width: 362px
+            height: 362px
+            justify-content: space-evenly
+            padding-left: 20px
+            transition: 0.6s    
+
+            &:hover 
+                background: #F61067
+                transform: translateY(-6px)
+
+                &::before 
+                    color: #FFFFFF
+
+    .section-block 
+        border: 1px solid red
+        display: flex
+        flex-direction: column
+        width: 362px
+        height: 362px
+        justify-content: space-evenly
+        padding-left: 20px
+        transition: 0.6s    
+
+        &:hover 
+            border: 1px solid blue
+            transform: translateY(-6px)
+            transition: 0.6s
+
+        p 
+            max-width: 290px
+            font-weight: 400  
+
+    &-block_purple
+        border: 1px solid rgba(255, 255, 255, 0.2)
+        display: flex
+        flex-direction: column
+        width: 362px
+        height: 362px
+        justify-content: space-evenly
+        padding-left: 20px
+        transition: 0.6s
+
+        &:hover 
+            background: #F61067
+            transition: 0.6s
+            transform: translateY(-6px)
+
+        & p 
+            margin-top: 30px
+            max-width: 270px
+
+.sub-text 
+    display: flex
+    @include text-style(27px, 400)
+    max-width: 754px
+    padding-bottom: 40px
+    color: #30233D
+
+ol 
+    counter-reset: my-counter
+  
+ol li 
+    counter-increment: my-awesome-counter
+    height: 362px
+    position: relative
+    padding-left: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    &::before 
+        content: "0" counter(my-awesome-counter) ". "
+        color: #F61067
+        font-weight: 900
+
+h1 
+    @include text-style(12.6px, 800)
+    text-transform: uppercase
+    color: #F61067
+    letter-spacing: 5px
+    margin-bottom: 10px
+
+h2 
+    @include text-style(27px, 500)
+

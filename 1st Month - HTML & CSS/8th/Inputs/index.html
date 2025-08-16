@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Create User</title>
+</head>
+<body>
+    <div class="main">
+    <h1>Create User</h1>
+        <div class="main_window">
+            <form>
+                <h2>USER INFO</h2>
+                <!-- PERSONAL INFO -->
+                <h2>PERSONAL INFO</h2>
+                <div class="personal_info">
+                    <div class="Title">
+                        <h3>Title <span>*</span></h3>
+                        <div class="title_radio">
+                            <input type="radio" id="Mr" name="title" value="Mr">
+                            <label for="Mr">Mr</label>
+                            <input type="radio" id="Mrs" name="title" value="Mrs">
+                            <label for="Mrs">Mrs</label>
+                            <input type="radio" id="Div" name="title" value="Div">
+                            <label for="Div">Div</label>
+                        </div>
+                    </div>  
+                    <div class="name">
+                        <h3>First Name <span>*</span></h3>
+                        <input placeholder="Enter your first name" type="text" name="first_name" id="first_name" required>
+                    </div>    
+                    <div class="name">
+                        <h3>Last Name <span>*</span></h3>
+                        <input placeholder="Enter your last name" type="text" name="last_name" id="last_name" required>
+                    </div>    
+                </div>
+                <!-- LOCATION -->
+                <h2>LOCATION</h2>
+                <div class="location">
+                    <div class="Street name">
+                        <h3>Street <span>*</span></h3>
+                        <input placeholder="Enter street" type="text" name="street" id="street" required>
+                    </div>    
+                    <div class="building location_input">
+                        <h3>Building <span>*</span></h3>
+                        <input placeholder="#" type="number" name="building" id="building" required>
+                    </div>   
+                    <div class="apartments location_input">
+                        <h3>Apartments <span>*</span></h3>
+                        <input placeholder="#" type="number" name="apartments" id="apartments" required>
+                    </div>   
+                </div>  
+                <!-- CONTACTS -->
+                <h2>CONTACTS</h2>
+                <div class="contact">
+                    <div class="contact_wrap">
+                        <h3>Mobile <span>*</span></h3>
+                        <input placeholder="+XX XX XX XX XXX" type="tel" name="mobile" id="mobile" required>
+                    </div>
+                    <div class="contact_wrap">
+                        <h3>Email <span>*</span></h3>
+                        <input placeholder="Enter email address" type="email" name="email" id="email" required>
+                    </div>
+                    <div class="contact_wrap">
+                        <h3>Tel</h3>
+                        <input placeholder="XXXX XX XX XX" type="tel" name="tel" id="tel">
+                    </div>
+                    <div class="contact_wrap">
+                        <h3>Fax</h3>
+                        <input placeholder="XXXX XX XX XX" type="text" name="fax" id="fax">
+                    </div>
+                </div>    
+                <!-- Credentials setting -->
+                <h2>CREDENTIALS SETTING</h2>
+                <div class="credential">
+                    <div class="password">
+                        <h3>Enter password <span>*</span></h3>
+                        <input placeholder="New password" type="password" name="password" id="password" required>
+                    </div>    
+                    <div class="password_confirm">
+                        <h3>Confirm password <span>*</span></h3>
+                        <input placeholder="Confirm new password" type="password" name="new_password" id="new_password" required>
+                    </div>   
+                    <div class="login">
+                        <h3>Add login <span>*</span></h3>
+                        <input placeholder="Create login" type="text" name="login" id="login" required>
+                    </div>   
+                </div>
+                <!-- SUBMIT -->
+                <div class="form">
+                    <button type="submit" class="btn submit">Create</button>
+                    <button type="reset" class="btn reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

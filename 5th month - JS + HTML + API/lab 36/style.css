@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cocktail_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+.cocktail_card {
+    width: 250px;
+    /*border: 1px solid black;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 15px;
+}
+
+.cocktail_card p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cocktail_card img {
+    width: 250px;
+}
+
+.modal_window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 500px;
+    height: 750px;
+}
+
+.modal_background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal_wrapper {
+    display: none;
+}
+
+.modal_content_header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal_cross {
+    cursor: pointer;
+}
+
+.modal_ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    gap: 5px
+}
+.ingredients img {
+    width: 50px;
+}
+
+/* INNER MODAL */
+
+.modal-inner_window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 500px;
+    height: 750px;
+}
+
+.modal-inner_background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-inner_wrapper {
+    display: none;
+}
+
+.modal-inner_content_header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-inner_cross {
+    cursor: pointer;
+}
+
+.modal-inner_ingredients {
+    display: flex;
+    flex-direction: column;
+}

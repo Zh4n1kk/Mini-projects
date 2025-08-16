@@ -1,0 +1,216 @@
+th, td {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.flex {
+  display: block;
+  max-width: 88px;
+}
+
+a {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 88px;
+  background: #195ABB;
+  border-radius: 0px 10px 10px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  padding-top: 10px;
+  margin-right: 25px;
+}
+
+.menu {
+  padding-bottom: 50px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+.nav a {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nav_icon {
+  fill: #CBCBE8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.nav_icon:hover {
+  fill: #B3DBF5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40px;
+}
+
+.table_header {
+  background: #195ABB;
+  border-radius: 10px 10px 0 0;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 10px;
+}
+
+.container {
+  max-width: 1148px;
+  margin: 0 auto;
+  background: #F8F9FF;
+}
+.container h1 {
+  background: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.table_container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  table-layout: auto;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: #F8F9FF;
+}
+table tr img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+table tr:hover {
+  background: rgba(239, 239, 239, 0.7058823529);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+table thead tr th {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  border-bottom: 2px solid rgba(25, 90, 187, 0.5);
+}
+
+td {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 40px;
+  border-bottom: 1px solid #D6D5D5;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 37.5px;
+}
+
+colgroup col:nth-child(1) {
+  width: 6%;
+}
+colgroup col:nth-child(2) {
+  width: 15%;
+}
+colgroup col:nth-child(3) {
+  width: 15%;
+}
+colgroup col:nth-child(5) {
+  width: 30%;
+}
+colgroup col:nth-child(6) {
+  width: 8%;
+}
+
+.btn {
+  background: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid #195ABB;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 10px;
+  background: #F8F9FF;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.table_bg {
+  background: #F8F9FF;
+  padding-bottom: 50px;
+}/*# sourceMappingURL=styles.css.map */

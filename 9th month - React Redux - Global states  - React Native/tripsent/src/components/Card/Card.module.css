@@ -1,0 +1,56 @@
+.Card {
+    min-width: 320px;
+    min-height: 100px;
+    background-color: #F1F2F6;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.CardImage {
+    border-radius: 5px;
+}
+
+.CardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.CardCountry {
+    display: flex;
+    gap: 5px;
+}
+
+.Country {
+    padding: 5px;
+    background: #193B670D;
+    border-radius: 5px;
+}
+
+.Sender {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.SenderInfo {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.PriceDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.Price {
+    font-size: 25px;
+    font-weight: bold;
+}

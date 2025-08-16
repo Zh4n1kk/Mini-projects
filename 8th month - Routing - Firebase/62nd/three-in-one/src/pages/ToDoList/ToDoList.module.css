@@ -1,0 +1,69 @@
+.container {
+    padding: 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task {
+    border: 1px solid black;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.inputs {
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    display: flex;
+}
+
+.inputs input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 95%;
+}
+
+.inputs button {
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid black;
+}
+
+.inputs button:hover {
+    background: black;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.cross {
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    width: 90%;
+    padding: 10px;
+    background: none;
+    outline: none;
+}
+
+.inputs button:hover {
+    border: 1px solid white;
+}

@@ -1,0 +1,71 @@
+.header
+    background: $main_color
+    padding: 15px 0 15px 0
+    &_line
+        +mobile-first-media(750px)
+        display: flex
+        justify-content: space-between
+        align-items: center
+    h1
+        font-size: 30px
+        font-weight: 600
+        +mobile-first-media(750px)
+            font-size: 20px
+            padding: 15px
+    div
+        ul
+            display: flex
+            flex-wrap: wrap
+            gap: 50px
+            li
+                &:nth-child(5)
+                    font-size: 18px
+                    border-bottom: 1px solid 
+                    font-weight: 600
+            +mobile-first-media(750px)
+                position: absolute
+                right: 0
+                left: 0
+                top: 100px
+                flex-direction: column
+                align-items: center
+                display: none
+    a
+        color: black
+        width: fit-content
+    &_wrap
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        +mobile-first-media(750px)
+            flex-direction: column
+            gap: 60px
+            font-size: 20px
+            align-items: normal
+
+#hamburger-menu:checked ~ ul
+    display: flex
+    background: $main_color
+    z-index: 5
+    border-bottom: 1px solid white
+    padding-bottom: 35px
+    
+
+
+#hamburger-menu
+    display: none
+
+.burger 
+    width: 35px
+    height: 5px
+    background-color: black
+    margin: 6px 0
+
+.hamburger-menu
+    display: none
+    flex-direction: column
+    align-items: flex-end
+    +mobile-first-media(750px)
+        display: flex
+        padding: 15px

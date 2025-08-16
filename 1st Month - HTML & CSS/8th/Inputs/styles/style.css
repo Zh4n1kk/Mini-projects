@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+form {
+    background: #F8F9FF;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.main h1 {
+    display: flex;
+    width: 1240px;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+input {
+    border: 1px solid #D6D5D5;
+    border-radius: 30px;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.main_window h2 {
+    font-size: 16px;
+    padding-left: 15px;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+}
+
+.main_window h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4E4E4E;
+    margin-left: 15px;  
+    margin-bottom: 15px;
+}
+
+.main_window input {
+    margin-left: 15px;  
+    padding-left: 15px;
+    margin-bottom: 35px;
+    background: none;
+}
+
+.main_window h2:nth-child(1) {
+    color: #FFFFFF;
+    background: #195ABB;
+    border-radius: 10px 10px 0px 0px; 
+    width: 1240px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    color: red;
+}
+
+.personal_info {
+    display: flex;
+}
+
+.button {
+    cursor: pointer; 
+    border-radius: 30px 0 0 30px;
+}
+
+/* TITLE */
+
+label {
+    color: #9A9A9A;
+    font-weight: 400;
+}
+
+.title_radio {
+    display: flex;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.title_radio input {
+    display: none; 
+}
+
+.title_radio label {
+    border: 1px solid #D6D5D5;
+    display: flex;
+    width: 80px;
+    cursor: pointer; 
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_radio label:nth-child(2) {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.title_radio label:nth-child(6) {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.title_radio input:checked + label {
+    border: 1px solid #209CEE;
+    color: #209CEE;
+}
+
+/* NAME */
+
+.name input{
+    height: 50px;
+    width: 384px;   
+}
+.name ::placeholder {
+    position: absolute;
+    left: 15px;
+}
+
+/* LOCATION */
+
+.main_window h2:nth-child(3) {
+    padding-top: 25px;
+}
+
+.location {
+    display: flex;
+}
+
+.location_input input {
+    height: 50px;
+    width: 180px;   
+}
+
+.location_input ::placeholder {
+    position: absolute;
+    left: 15px;
+}
+
+/* CONTACT */
+
+.contact {
+    display: flex;
+}
+
+.contact_wrap input {
+    height: 50px;
+    width: 283px;   
+}
+
+/* Credential */
+
+.credential {
+    display: flex;
+}
+
+.credential input {
+    height: 50px;
+    width: 283px;
+}
+
+.form button {
+    border: 1px solid #195ABB;
+    background: none;
+    color: #195ABB;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.1s;
+}
+
+.form button:hover {
+    background: #195ABB;
+    color: #FFFFFF;
+    transition: 0.1s;
+}

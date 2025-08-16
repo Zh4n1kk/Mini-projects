@@ -1,0 +1,15 @@
+.SendMessageForm input {
+    border: 1px solid white
+}
+
+.SendMessageForm button {
+    border: 1px solid white
+}
+
+.SendMessageForm form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

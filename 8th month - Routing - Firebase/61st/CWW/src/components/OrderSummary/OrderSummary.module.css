@@ -1,0 +1,13 @@
+.listItem {
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.list {
+    margin: 20px;
+}
+
+.cont {
+    font-weight: 300;
+    font-size: 24px;
+}

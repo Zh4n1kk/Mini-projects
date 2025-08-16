@@ -1,0 +1,66 @@
+/* FOOTER */
+.footer
+    background: #373A3C
+    padding: 60px
+    line-height: 30px
+
+    &_container 
+        max-width: 1080px
+        margin: 0 auto
+
+    &_wrap 
+        display: flex
+        justify-content: space-around
+
+    &_section 
+        display: flex
+        flex-direction: column
+
+        h3 
+            color: #7DD42F
+            font-size: 18px
+            font-weight: 700
+            margin-bottom: 15px
+
+
+        a 
+            text-decoration: none
+            color: #FFF
+            font-size: 14px
+            margin-bottom: 10px
+            transition: color 0.3s
+
+    &_bottom 
+        color: #FFF
+        margin-top: 50px
+        display: flex
+        max-width: 1200px
+        flex-wrap: wrap
+        .divider 
+            border: none
+            border-top: 1px solid #FFF
+            width: 1200px /* Написал тут шире чтобы не было смещения вправо */
+            border: 1px 0px 0px 0px
+    &_text_flex 
+        display: flex
+        justify-content: space-between
+        width: 50%
+
+.social_icons 
+    display: flex
+    gap: 15px
+
+.mic 
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+    align-content: space-around
+    align-items: center
+
+@include mobile-first-media (620px)
+    .footer
+        a
+            font-size: 24px
+            @include pa-x(10px)
+        &_wrap
+            flex-direction: column

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function countChars(letter, word) {
+                let count = 0;
+
+                for (let i = 0; i < word.length; i++) {
+                    if (word[i] === letter) {
+                        count++;
+                    }
+                }
+    
+                return count;
+            }
+
+            console.log(`countChars('b','bbbbb')`)
+            console.log(countChars('b','bbbbb'))
+            console.log(`countChars('s','mississippi')`)
+            console.log(countChars('s','mississippi'))
+            console.log(`countChars('w','hello')`)
+            console.log(countChars('w','hello'))
+            console.log(`countChars('B','book')`)
+            console.log(countChars('B','book'))
+        </script>
+    </body>
+</html>

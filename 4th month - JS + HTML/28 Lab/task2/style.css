@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.item {
+    margin-left: 5px;
+    width: 80px;
+    border: solid 1px black;
+    border-bottom: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item:active {
+    color: blue;
+}
+
+.content {
+    margin-left: 5px;
+    height: 150px;
+    width: 650px;
+    border: 1px solid black; 
+}
+
+.content-item {
+    display: block;
+}
+
+.content-item-one {
+    display: none;
+}
+
+.content-item-two {
+    display: none;
+}
+
+.content-item-three {
+    display: none;
+}

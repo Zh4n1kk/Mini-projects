@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="movie_card.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+<script type="text/babel">
+    const Header = () => (
+      <header>
+        <h1>Мои любимые фильмы</h1>
+      </header>
+    );
+
+    const MovieCard = ( props ) => (
+      <div className="movie-card">
+        <img src={props.image} alt={props.title} />
+        <h3>{props.title}</h3>
+        <p>{props.year}</p>
+      </div>
+    );
+
+    const Content = () => (
+      <main>
+        <div className="movies">
+          <MovieCard
+            title="Шрек"
+            year="2001"
+            image="https://upload.wikimedia.org/wikipedia/ru/thumb/3/39/Shrek.jpg/330px-Shrek.jpg"
+          />
+          <MovieCard
+            title="Шрек 2"
+            year="2004"
+            image="https://upload.wikimedia.org/wikipedia/ru/f/ff/Shrek_2.jpg"
+          />
+          <MovieCard
+            title="Шрек 3"
+            year="2007"
+            image="https://upload.wikimedia.org/wikipedia/ru/4/4b/%D0%A8%D1%80%D0%B5%D0%BA_%D0%A2%D1%80%D0%B5%D1%82%D0%B8%D0%B9.jpg"
+          />
+        </div>
+      </main>
+    );
+
+    const App = () => (
+      <React.Fragment>
+        <Header />
+        <div className="container">
+          <Content />
+        </div>
+      </React.Fragment>
+    );
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

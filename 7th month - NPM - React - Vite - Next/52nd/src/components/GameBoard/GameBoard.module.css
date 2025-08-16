@@ -1,0 +1,24 @@
+.board {
+    padding: 10px;
+    border: 1px solid black;
+    width: 600px;
+}
+
+.congratz {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    animation: pop-in 0.5s ease-out;
+}
+
+@keyframes pop-in {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(255, 239, 200, 0.25);
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+input,button {
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid black;
+    transition: 500ms;
+    text-align: center;
+    border-radius: 3px 3px 0px 0px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+input:focus {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.user_input input:nth-child(1){
+    width: 60%;
+    height: 25px;
+}
+
+.user_input input:nth-child(2){
+    width: 20%;
+    height: 25px;
+}
+
+.user_input button {
+    width: 18.92%;
+    height: 25px;
+}
+
+.user_input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+.user_feed {
+    padding: 10px;
+}
+
+.feed_name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.feed_post {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: 500ms;
+    cursor: default;
+}
+
+.feed_post:hover {
+    transition: 500ms;
+    background-color: #000000;
+    color: white;
+}
+
+.feed_time {
+    font-size: 10px;
+    color: gray;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* LOADER */
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #b8ffbc;
+    border-bottom-color: #ffa9d0;
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

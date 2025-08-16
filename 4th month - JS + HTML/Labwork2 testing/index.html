@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="inputs">
+        <div>
+            <p>Country</p>
+            <p>Date</p>
+        </div>
+        <form class="input_info">
+            <label for="country"></label>
+            <select id="country" name="country" class="form-control">
+                <option value=""></option>
+            </select>
+            <input class="input_date" type="date">
+        </form>
+        <div class="input_message_wrap">
+            <p>Message</p>
+            <div class="input_message">
+                <input type="text" name="Message">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="messages_container" id="messages_container"></div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

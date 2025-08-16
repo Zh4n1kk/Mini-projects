@@ -1,0 +1,40 @@
+/* .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list button {
+    font-size: 13.7px;
+} */
+
+.container {
+    padding: 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.inputs {
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    display: flex;
+}
+
+.inputs input {
+    border: none;
+    outline: none;
+    width: 95%;
+    background: none;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+}
+
+.inputs button {
+    border: none;
+    outline: none;
+}
+
+.inputs button:hover {
+    border: 1px solid white;
+}

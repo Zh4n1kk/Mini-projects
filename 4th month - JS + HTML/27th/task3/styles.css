@@ -1,0 +1,39 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #001A23;
+    color: #E8F1F2;
+    font-family: verdana;
+}
+
+button {
+    border: none;
+    background-color: #B3EFB2;
+    width: 10vw;
+    height: 25px;
+    border-radius: 15px;
+    color: #001A23;
+    font-size: 20px;
+}
+
+span {
+    font-size: 10vw;
+    color: #B3EFB2;
+}
+
+.container {
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    vertical-align: middle;
+    height: 50vh;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}

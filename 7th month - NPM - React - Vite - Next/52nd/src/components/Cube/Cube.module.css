@@ -1,0 +1,27 @@
+.cube {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+
+.cube::after {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 999;
+    width: 100px;
+    height: 100px;
+    background: grey;
+    border: 1px solid black;
+    transition: 1s;
+}
+
+.cube.revealed::after {
+    transform: 1s;
+    background: red;
+    opacity: 0;
+}

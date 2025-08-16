@@ -1,0 +1,9 @@
+.listItem {
+    text-transform: capitalize;
+}
+.list {
+    margin: 20px;
+}
+.formBlock {
+    display: flex;
+}

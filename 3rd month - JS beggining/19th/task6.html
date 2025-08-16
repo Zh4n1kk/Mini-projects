@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let seconds = prompt('Введите время')
+            let hours = parseInt(seconds / 3600);
+            if (hours >= 0) {
+                console.log ('Осталось ' + seconds + ' секунд')
+                console.log ('Осталось ' + hours + ' часов')
+                alert('Осталось: ' + seconds + ' секунд'
+                + '\n' + 'Осталось: ' + hours + ' часов')
+            } else {
+                console.log ('Осталось ' + seconds + ' секунд')
+                console.log ('Смена закончилась!')
+                alert('Смена закончилась!')
+            }
+    </script>
+</body>
+</html>

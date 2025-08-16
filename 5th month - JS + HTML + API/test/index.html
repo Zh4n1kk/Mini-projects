@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- MODAL WINDOW -->
+<div class="modal_wrapper">
+  <div class="modal_background"></div>
+  <div class="modal_window">
+    <div class="modal_content">
+      <div class="modal_content_header">
+        <div class="modal_heading">Cocktail info</div>
+        <img src="img/cross.svg" alt="cross" class="modal_cross">
+      </div>
+      <div class="modal_content_body"></div>
+    </div>
+  </div>
+</div>
+<!---->
+<div class="container">
+  <div class="user_interactions">
+    <div class="user_interactions_info">
+      <p class="name" id="user_name"></p>
+      <img src="img/edit-icon.svg" alt="edit-icon" id="edit-icon" class="edit-icon">
+    </div>
+    <button id="follow_user_btn">
+      <img src="img/user.svg" class="user-icon" alt="user-icon">
+      <p>Follow user</p>
+    </button>
+  </div>
+  <div class="user_input">
+    <form>
+      <input type="text" placeholder="what's on your mind?" id="user_input">
+      <button id="send_msg">Send</button>
+    </form>
+  </div>
+  <div class="user_feed"></div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

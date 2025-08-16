@@ -1,0 +1,289 @@
+@import global.sass
+@import abstracts/_mixins.sass
+
+.container 
+    max-width: 1180px
+    margin: 0 auto
+    padding: 0
+
+.header_container
+    max-width: 1300px
+    margin: 0 auto
+    padding: 0
+
+.header
+    padding-top: 15px
+    padding-bottom: 15px
+.nav 
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &_text
+        display: flex
+        width: 800px
+        justify-content: space-between
+        align-items: center
+        +mobile-first-media(750px)
+            flex-direction: column
+        img
+            width: 24px
+        a
+            font-family: "Roboto"
+            color: transparent
+            font-weight: 300
+            transition: 0.5s
+            background-image: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+            color: transparent
+            background-clip: text    
+            &::before
+                content: ''
+                transition: 0.5s
+                width: 0px
+                border-radius: 0px
+            &:hover::before
+                content: ''
+                display: block
+                background: orange
+                width: 25px
+                margin: 0 auto
+                height: 3px
+                border-radius: 5px
+                position: relative
+                top: 24px
+                transition: 0.5s
+            span
+                font-weight: 700
+
+                    
+                
+                
+.btn
+    border: none
+    background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+    border-radius: 25px
+    padding: 15px
+    color: white
+    width: 160px
+    // padding: 15px 160px 15px 160px
+    cursor: pointer
+
+.promo
+    background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+    height: 498px
+    &_wrap
+        display: flex
+        flex-direction: row
+        color: white
+        justify-content: space-between
+        &_text
+            display: flex
+            max-width: 560px
+            flex-direction: column
+            justify-content: center
+            gap: 50px
+            position: relative
+            top: 80px
+            span
+                font-weight: 1000
+            h1
+                font-size: 44px
+                font-weight: 1000
+            p
+                font-size: 18px
+                font-weight: 100
+                max-width: 450px
+    img
+        max-width: 361px
+        width: 100%
+
+.search_bar
+    position: relative
+    top: 2em
+    background: orange
+    padding: 5px 15px 15px 15px
+    border-radius: 5px
+    display: flex
+    margin-bottom: 90px
+    img
+        border-bottom: 2px solid white
+
+.search
+    background: transparent
+    border: none
+    outline: none
+    width: 100%
+    height: 35px
+    border-bottom: 2px solid white
+    color: white
+    &::placeholder
+        color: white
+
+.grid 
+    display: grid
+    grid-template-areas: "sort_bar sort_bar sidebar" "courses courses sidebar" "pagination pagination sidebar"
+    grid-template-columns: repeat(auto-fill , minmax(320px,1fr 1fr))
+    grid-template-rows: auto auto auto auto
+    gap: 20px
+    color: white
+
+.courses 
+    grid-area: courses
+
+.sort_bar
+    display: flex
+    flex-direction: row
+    grid-area: sort_bar
+    justify-content: space-between
+    color: black
+    &_wrap
+        display: flex
+        flex-direction: row
+        gap: 60px
+        &_show
+            gap: 20px
+            display: flex
+            flex-direction: row
+
+.course_card
+    background-color: #C4C4C4
+    height: 280px
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    h2
+        font-size: 14px
+        font-weight: 900
+        display: flex
+        justify-content: flex-end
+        span
+            background: linear-gradient(hsla(32, 100%, 50%, 1), hsla(45, 100%, 50%, 1))
+            border-radius: 0px 10px 0px 10px
+            padding: 10px
+
+    p
+        display: flex
+        font-weight: 1000
+        font-size: 14px
+        background: linear-gradient(hsla(32, 100%, 50%, 1), hsla(45, 100%, 50%, 1))
+        height: 70px 
+        padding: 15px 0px 15px 30px  
+        border-radius: 0px 0px 10px 10px  
+        flex-direction: column
+        justify-content: center
+        gap: 5px
+
+.sidebar
+    position: relative
+    top: 8px
+    color: #5C5C5C
+    grid-area: sidebar
+    display: grid
+    gap: 19px
+    height: 150px
+    .radio_wrap
+        display: flex
+        flex-direction: row
+        gap: 10px
+    span
+        border: 1px solid #C4C4C4
+        border-radius: 100px
+        width: 60px
+        height: 60px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+    input
+        display: none
+        &[type="radio"]:checked + span
+            background: orange
+            color: white    
+
+    h3
+        font-weight: 600
+        font-size: 18px
+    p
+        display: grid
+        font-size: 14px
+        font-weight: 300
+        align-content: space-between
+        height: 50px
+
+
+
+.grid_container
+    display: grid
+    grid-template-columns: repeat(3, minmax(18vw, 1fr))
+    gap: 10px
+
+.pagination
+    display: flex
+    gap: 15px
+    grid-area: pagination
+    button
+        background: none
+        cursor: pointer
+        border: 1px solid rgba(152, 152, 152, 0.5)
+        width: 60px
+        height: 60px
+        border-radius: 100px
+        transition: 0.2s
+        color: black
+        &:nth-child(5)
+            width: 100px
+        &:hover
+            background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+            color: white
+            transition: 0.2s
+
+footer
+    display: flex
+    background: #212121
+    color: white
+    width: 100%
+.footer
+    display: flex
+    flex-direction: row
+    width: 100%
+    justify-content: space-between
+    margin-bottom: 50px
+    &_icons
+        display: flex
+        gap: 10px
+    &_nav
+        display: flex
+        flex-direction: column
+        gap: 10px
+    &_bar
+        padding-top: 55px
+        display: flex
+        flex-direction: column
+        width: 260px
+        height: 250px
+        gap: 50px
+        &:nth-child(3)
+            padding-top: 175px
+        &_wrap
+            display: flex
+        h1
+            font-weight: 700
+        a
+            color: white
+            width: fit-content
+.reserved
+    background: #000
+    height: 40px
+    font-weight: 800
+    color: white
+    &_text
+        display: flex
+        flex-direction: row
+        height: 40px
+        align-items: center
+        justify-content: space-between
+        gap: 20px
+        span
+            color: #FFA500
+            text-decoration: underline 1px
+

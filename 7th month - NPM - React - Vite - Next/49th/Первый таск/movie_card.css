@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    margin: 0 auto;
+    width: 50.5vw;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #fdfdfd;
+}
+
+.movie-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    max-width: 300px;
+}
+
+.movie-card img {
+    background-size: cover;
+    width: 13vw;
+    height: 20vw;
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    margin: 10px 0 5px;
+}
+
+.movies {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}

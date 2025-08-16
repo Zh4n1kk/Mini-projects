@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calendar_container {
+    padding: 10px;
+}
+.calendar_window {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    max-width: 200px;
+    display: none;
+}
+.calendar_month {
+    text-align: center;
+    background-color: #ffff;
+    border-bottom: 1px solid black;
+    padding: 2px;
+}
+
+.calendar_month:hover {
+    background-color: darkgrey;
+}
+
+.calendar_month:active {
+    background-color: grey;
+}
+
+.calendar_number {
+    padding: 5px;
+}
+
+.calendar_number button {
+    width: 20px;
+    margin: 2px;
+    cursor: pointer;
+}

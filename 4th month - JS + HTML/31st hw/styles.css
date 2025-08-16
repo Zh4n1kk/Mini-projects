@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+body {
+    background-color: rgb(9 32 50);
+    color:rgb(151 172 185)
+}
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid rgb(151 172 185);
+    background: #0F172A;
+    color:rgb(151 172 185);
+    user-select: none;
+    touch-action: manipulation;
+}
+
+button:active {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+}
+
+input {
+    border-radius: 5px;
+    border: #CBD5E1 1px solid;
+    background-color: rgb(9 32 50);
+    color:rgb(151 172 185)
+}
+.container {
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form_input {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+.form_input input {
+    width: 100%;
+    text-align: center;
+}
+
+.country_info {
+    display: flex;
+    gap: 20%;
+    position: relative;
+    z-index: 2;
+    padding-top: 50px;
+}
+
+.country_row {
+    display: flex;
+    flex-direction: row;
+}
+.country_info img {
+    width: 100%;
+}
+
+.country_info_static {
+    color: rgb(216 164 34);
+    font-weight: bold;
+    width: 240px;
+}
+
+.country_info_dynamic {
+    width: 330px;
+}
+.design_card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding: 20px;
+    min-height: 350px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(151, 172, 185);
+}
+
+.map {
+    width: 100%; 
+    height: 300px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.loader {
+    position: relative;
+    right: 47%;
+    bottom: -20px;
+    margin: 0 auto;
+    width: 60px;
+    height: 25px;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: grid;
+    animation: l2 2s infinite linear;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    grid-area: 1/1;
+    border: inherit;
+    border-radius: 50%;
+    animation: inherit;
+    animation-duration: 3s;
+  }
+  .loader:after {
+    --s:-1;
+  }
+  @keyframes l2 {
+     100% {transform:rotate(calc(var(--s,1)*1turn))}
+  }

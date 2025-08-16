@@ -1,0 +1,65 @@
+/* HEADER */
+
+.container 
+    max-width: 1080px
+    margin: 0 auto
+
+
+.header_text 
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    padding-top: 15px 
+    // height: 60px
+    gap: 50px
+
+.header
+    background: #373A3C
+    // height: 60px
+    width: 100%
+    padding-bottom: 15px
+
+
+nav 
+    a 
+        font-size: 18px
+        font-weight: 400
+        color: #FFF
+        text-decoration: none
+
+.xbox
+    &_user 
+        padding-left: 30px 
+        background: url('../images/user.svg')
+        background-repeat: no-repeat
+        display: flex
+        width: 215px    
+
+    &_logo 
+        display: flex
+        // height: 60px
+        align-items: center
+
+
+    &_logo_wrap 
+        width: 100%
+        max-width: 600px
+
+.down_arrow 
+    display: inline-block
+    width: 12px 
+    height: 12px 
+    background: url('../images/down-arrow.svg') no-repeat center
+    background-size: contain
+    margin-left: 10px 
+
+@include mobile-first-media (750px)
+    .header
+
+        &_text
+            flex-direction: column
+        &_user 
+            width: auto
+    
+@include mobile-first-media (600px)
+    

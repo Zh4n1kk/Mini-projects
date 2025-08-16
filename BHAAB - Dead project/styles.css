@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.promo_p {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    max-width: 1920px;
+}
+
+/* OPENER */
+
+.bhaab-opener {
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.bhaab-opener h1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+    padding: 0 50px 0 50px;
+}
+
+.header a {
+    text-decoration: none;
+    transition: 0.2s;
+    filter: invert(1);
+    color: black;
+}
+
+.header_logo {
+    text-align: center;
+    font-size: 48px;
+    position: sticky;
+    display: none;
+}
+/* сделать норм инвертирование */
+.header b {
+    display: flex;
+    font-weight: 900;
+    font-size: 40px;
+    filter: invert(1) blur(2px);
+    transition: filter 0.5s ease;
+} 
+
+.header-nav:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+.header b.animate-in:hover {
+    filter: invert(1) blur(0);
+}
+
+.header_nav {
+    display: flex;
+    opacity: 0;
+    left: 50%;
+    gap: 20px;
+    transform: translateX(500px);
+    transition: 2s;
+}
+
+.header b {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1s ease;
+    filter: invert(1) blur(0px);
+}
+
+.header_nav.animate-in {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.header b.animate-in {
+    left: 80%;
+    transform: translateX(0%);
+    opacity: 1;
+    filter: invert(1) blur(2.5px);
+}
+
+/* PROMO */
+
+.promo_textbottom {
+    color: white; 
+    width: 80%; /* Можно задать ширину контейнера */
+    position: absolute;
+    padding-bottom:50px;
+}
+
+.promo {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-end; 
+    height: 100vh;
+    background-image: url(src/promo/bg_promo.jpeg);
+    background-size: cover;
+}
+
+.promo_logos {
+    position: relative; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    max-width: 1000px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    align-items: center;
+}
+
+.promo_logos_element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.promo_logos_element img {
+    height: 400px;
+    width: 350px;
+    object-fit: contain;
+    transform: rotateY(0deg);
+    transition: 5s;
+}
+
+.promo_logos_element:hover {
+    transform: rotateY(900deg);
+    transition: 15s;
+}
+
+/* CONTENT-SECTION */
+
+.content-section {
+    align-items: center;
+    padding: 50px;
+}
+
+.content-section h1 {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.content-section h1:nth-child(3) {
+    padding-top: 15px;
+    position: relative;
+}
+
+.content-section p {
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    max-width: 360px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-section_list {
+    max-width: 900px;
+}
+
+.content-section_card_desc {
+    text-align: center;
+}
+.content-section_card {
+    align-items: center;
+    height: 250px;
+    gap: 50px;
+}
+.content-section img {
+    width: 350px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* PARTICIPANTS */
+
+.participants{
+    background-image: url("src/participants/participant_bg.jpg");
+    background-size: cover;
+}
+.participants h2{
+    color: white;
+}
+
+.participants p {
+    color: white;
+    font-weight: 600;
+}
+
+.participants_list {
+    width: 180px;
+    align-items: flex-start;
+}
+
+/* PARIS */
+.paris_info {
+    background-color: white;
+    align-items: center;
+}
+.paris_info p {
+    color: black;
+    font-weight: 500;
+}
+.paris_photo {
+    align-items: center;
+    grid-template-columns: 1fr 1fr; /* Картинка занимает свою ширину, текст — оставшееся пространство */
+    gap: 90px;
+}
+.paris_photo img {
+    position: relative;
+    width: 100%;
+}
+.paris_photo_desc {
+    text-align: center;
+}
+.top-line_paris p {
+    padding: 35px 0px 10px;
+    font-weight: 900;
+}
+
+/* INSTRUMENTS */
+
+/* Обязательно должен быть либо flex-col либо flex-row для работы флекс стилей! */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+/* рэпер на верхний и нижний текст */
+.wrapper-tb {
+    width: 93%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+.top-line {
+    padding: 50px 0 800px 0;
+}
+.top-line p{
+    font-weight: 900;
+}
+
+.gap-5px {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+ 
+.gap-15px {
+    gap: 15px;
+}
+
+.gap-20px {
+    gap: 20px;
+}
+
+.gap-30px {
+    gap: 30px;
+}
+
+.gap-45px {
+    gap: 45px;
+}
+
+/* Конец раздела display: flex */
+.center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Текст го(й)да снизу страницы */
+.year_p {
+    font-weight: 900;
+    position: relative;
+    padding: 30px 0px 50px 50px;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cart-items">
+        <div class="item">Milk 1 l.<span class="qty"> x2</span></div>
+        <div class="item">Cola 1.5 l. <span class="qty"> x1</span></div>
+        <div class="item">Bread<span class="qty"> x2</span></div>
+        <div class="item">Cheese<span class="qty"> x1</span></div>
+        <div class="item">Chocolate bar<span class="qty"> x3</span></div>
+      </div>
+      <script>
+        const doc = document.getElementsByClassName('item')
+        doc[1].remove()
+        
+        // Canned fish
+        const fish = document.createElement('div');
+        fish.setAttribute('class','item');
+        const fishText = document.createTextNode('Canned fish'); 
+        fish.appendChild(fishText);
+        
+        const fishAmount = document.createElement('span')
+        fishAmount.setAttribute('class','qty')
+        const fishAmountText = document.createTextNode(' x4');
+        fishAmount.appendChild(fishAmountText)
+
+        fish.appendChild(fishAmount);
+        
+        // replacing
+        doc[1].parentNode.replaceChild(fish, doc[3])
+      </script>
+</body>
+</html>

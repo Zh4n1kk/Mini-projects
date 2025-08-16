@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const mathDiff = prompt(
+            'Выберите уровень сложности:\n' +
+            '1 - Легкая (Таблица умножения на 1 и 2)\n' +
+            '2 - Средняя (Таблица умножения от 3 до 5)\n' +
+            '3 - Сложная (Все кроме 1,2 и 5)\n' +
+            '4 - все (Будет вся таблица от 1 до 10) '
+        );
+
+        let difficultyArray
+        if (mathDiff == 1) {
+            alert('Легкая сложность 1 и 2')
+            difficultyArray = [1, 2]
+        } else if (mathDiff == 2) {
+            alert('Средняя сложность 3 и 5')
+            difficultyArray = [3, 4, 5]
+        } else if (mathDiff == 3) {
+            alert('Сложная сложность, все кроме 1,2 и 5')
+            difficultyArray = [3, 4, 6, 7, 8, 9]
+        } else if (mathDiff == 4) {
+            alert('Выбрана максимальная сложность, вся таблица от 1 до 9')
+            difficultyArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        } else if (isNaN(mathDiff)) {
+            alert('Вы выбрали максимальную сложность со всей таблицей от 1 до 9')
+            difficultyArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        } else {
+            alert('Отмена')
+        }
+
+        const state = {
+            correct: 0,
+            wrong: 0,
+            most_correct: {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            most_wrong: {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+        }
+
+        while (true) {
+            const number1 = difficultyArray[Math.floor(Math.random() * difficultyArray.length)];
+            const number2 = Math.floor(Math.random() * 10);
+            const answer = prompt('Сколько будет: ' + number1 + ' * ' + number2);
+            const overall = number1 * number2
+            if (answer === null) {
+                alert('Остановлено')
+                break;
+            } else if (isNaN(answer)) {
+                alert("Это не число")
+            } else if (answer != overall) {
+                state.wrong++
+                state.most_wrong[number1]++
+                state.most_wrong[number2]++
+                alert('Неправильно!')
+            } else if (answer == overall) {
+                state.correct++
+                state.most_correct[number1]++
+                state.most_correct[number2]++
+                alert('Правильно!')
+            } else {
+                alert('Что-то пошло не так :(')
+                break;
+            }
+        }
+        alert(`Правильных ответов: ${state.correct} \nНеправильных ответов: ${state.wrong} \n
+        Для подробной информации смотрите в консоль`);
+        console.log(`Правильных ответов: ${state.correct} \nНеправильных ответов: ${state.wrong}`);
+        let mistakes = Object.entries(state.most_wrong)
+        const mistakesSort = mistakes.sort((a,b) => b[1] - a[1]); 
+        const mistakesSlice = mistakesSort.slice(0,3)
+        mistakesSlice.forEach(([number, count]) => {
+            console.log(`В таблице на ${number} - ${count} ошибка`);
+        });
+    </script>
+</body>
+</html>

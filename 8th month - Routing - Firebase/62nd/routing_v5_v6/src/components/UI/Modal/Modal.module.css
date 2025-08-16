@@ -1,0 +1,43 @@
+.Modal {
+    margin: auto;
+    background-color: white;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    box-sizing: border-box;
+    color: black;
+    transition: display 0.5s allow-discrete, overlay 0.5s allow-discrete;
+    animation: close 0.5s forwards;
+    &[open] {
+        animation: open 0.5s forwards;
+    }
+}
+
+.Modal::backdrop {
+    background-color: rgba(0,0,0,0.5);
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+    }
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes close {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

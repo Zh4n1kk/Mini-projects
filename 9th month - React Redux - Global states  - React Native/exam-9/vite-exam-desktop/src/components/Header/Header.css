@@ -1,0 +1,20 @@
+.header_link {
+    transition: 0.1s;   
+    padding: 1px;
+    cursor: pointer;
+}
+
+.header_link:hover {
+    color: rgba(39, 138, 177, 0.799);
+    border-right: 3px solid white;
+    transition: 0.1s;
+}
+
+.header {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(255,255,255,0.5);
+}
+
+.header_active {
+    color: rgb(255,255,255,0.5)
+}

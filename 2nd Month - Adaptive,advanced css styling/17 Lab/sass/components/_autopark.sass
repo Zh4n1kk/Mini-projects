@@ -1,0 +1,110 @@
+.autopark
+    margin-top: 15px
+    margin-bottom: 25px
+    &_grid
+        display: grid
+        margin: 0 auto
+        grid-template: 'header header header' 'info info img'
+        color: $text_color
+        gap: 50px
+        +mobile-first-media(650px)
+            grid-template: 'header' 'img' 'info'
+    &_header
+        display: flex
+        grid-column: 1 / 4
+        flex-direction: column
+        align-items: center
+        gap: 10px
+        grid-area: header
+    &_title
+        font-weight: 600
+        font-size: 30px
+    &_subtitle
+        font-weight: 600
+        font-size: 24px
+    &_info
+        display: flex
+        grid-area: info
+        flex-direction: column
+        gap: 20px
+        &_list
+            list-style: url('../../images/icon_check.svg')
+            display: grid
+            position: relative
+            left: 18px
+            gap: 20px
+            +mobile-first-media(650px)
+                display: none
+        &_title
+            font-size: 24px
+            font-weight: 600
+            color: #333333
+            +mobile-first-media(650px)
+                display: none
+            &_mobile
+                display: none
+                +mobile-first-media(650px)
+                    display: block
+                    font-weight: 400
+                    font-size: 12px
+                    color: #333333
+
+
+
+        &_btn
+            @include btn(#FED100)
+            padding: 15px 40px 15px 40px
+            width: 100%
+            max-width: 250px
+        +mobile-first-media(650px)
+            align-items: center
+    &_image_block
+        grid-area: img
+
+    &_subtitle
+        margin-top: 5px
+        margin-bottom: 50px
+        +mobile-first-media(650px)
+            display: none
+   
+    &_btn
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 201px
+        height: 50px
+        font-size: 20px
+        font-weight: 500
+        +mobile-first-media(650px)
+            width: 100px
+            gap: 20px
+            font-size: 16px
+            font-weight: 400
+
+    &_input:checked ~ &_btn
+        border: 1px solid $main_color
+        +mobile-first-media(650px)
+            border: none
+            border-bottom: 1px solid $main_color
+
+    &_input
+        display: none
+
+    &_btns
+        font-size: 20px
+        font-weight: 500
+        display: flex
+        justify-content: center
+        +mobile-first-media(650px)
+            gap: 40px
+        +mobile-first-media(400px)
+            gap: 0px
+
+    &_image
+        width: 100%
+        height: 100%
+        
+
+    
+
+            

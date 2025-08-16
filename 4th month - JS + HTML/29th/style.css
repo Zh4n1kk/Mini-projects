@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content textarea {
+    width: 500px;
+    height: 250px;
+}
+
+.content {
+    display: none;
+    flex-direction: column;
+}
+
+.content button {
+    width: 100px;
+}
+
+.btns {
+    margin-top: 5px;
+    display: flex;
+    gap: 2px;
+}
+
+.login {
+    display: flex;
+    gap: 5px;
+    margin: 20px;
+}
+
+.login button {
+    width: 50px;
+}

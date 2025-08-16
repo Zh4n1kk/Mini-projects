@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0;
+    font-size: 1.25vw;
+}
+
+.header_links {
+    display: flex;
+}
+
+.header_links a {
+    display: flex;
+    color: white;
+    padding: 0 10px 0 10px;
+    border-right: 2px solid white;
+    transition: 0.5s;
+}
+
+.header_links a:nth-child(4) {
+    border-right: 0px solid white;
+    transition: 0.5s;
+}
+
+.header_links a:hover {
+    display: flex;
+    color: lightblue;
+    padding: 0 10px 0 10px;
+    border-right: 5px solid lightblue;
+    transition: 0.5s;
+}

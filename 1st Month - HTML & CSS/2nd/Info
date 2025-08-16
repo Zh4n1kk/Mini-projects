@@ -1,0 +1,124 @@
+Домашка #3
+
+
+Вам необходимо сверстать страницу (макет myfolio.jpg), выстраивание колонок в ряд в блоке “About me” можно выполнить при помощи css-свойства display: inline-block
+Картинки: лежат в папке img
+
+
+Информация со всеми размерами и цветами на макете находится в этой же папке.
+
+
+Нужно чтобы верстка была максимально похожа на макет (но без фанатизма)
+
+
+Если будут вопросы, пишите в чат, постараемся оперативно отвечать!
+Также некоторые вопросы по домашке, можно рассмотреть на вебинаре
+
+
+Информация к дизайну: ✅
+Шрифт: arial
+ширина контентной части страницы: 1008px
+
+
+Шапка ✅
+высота шапки - 62px  цвет фона: #02918c
+Логотип - нужно вставить картинкой завернутой в ссылку:  a > img
+
+
+Промо-блок: ✅
+картинку можно вставить в html через тег <img>
+
+
+Блок About me:
+Логотип: вставить через background
+Заголовок:  #02918c,  46px,  bold ✅
+текст под заголовком: 16px,  #7e8287 ✅
+заголовок в айтемах: 18px, bold, #7e8287
+текст в айтемах: 14px normal #7e8287 высота строки 21px.
+
+Футер:
+высота: 79px   фон: #000   текст: #7e8287 12px normal
+
+
+
+
+Текст
+About me
+
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+
+
+Title goes here
+onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+
+
+© Myfolio
+
+
+
+
+
+
+
+Домашка #3
+
+
+Вам необходимо сверстать страницу (макет myfolio.jpg), выстраивание колонок в ряд в блоке “About me” можно выполнить при помощи css-свойства display: inline-block
+Картинки: лежат в папке img
+
+
+Информация со всеми размерами и цветами на макете находится в этой же папке.
+
+
+Нужно чтобы верстка была максимально похожа на макет (но без фанатизма)
+
+
+Если будут вопросы, пишите в чат, постараемся оперативно отвечать!
+Также некоторые вопросы по домашке, можно рассмотреть на вебинаре
+
+
+Информация к дизайну:
+Шрифт: arial
+ширина контентной части страницы: 1008px
+
+
+Шапка
+высота шапки - 62px  цвет фона: #02918c
+Логотип - нужно вставить картинкой завернутой в ссылку:  a > img
+
+
+Промо-блок:
+картинку можно вставить в html через тег <img>
+
+
+Блок About me:
+Иконки: вставить через background
+Заголовок:  #02918c,  46px,  bold
+текст под заголовком: 16px,  #7e8287
+заголовок в айтемах: 18px, bold, #7e8287
+текст в айтемах: 14px normal #7e8287 высота строки 21px
+
+Футер:
+высота: 79px   фон: #000   текст: #7e8287 12px normal
+
+
+
+
+Текст
+About me
+
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+
+
+Title goes here
+onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+
+
+© Myfolio
+
+
+
+
+

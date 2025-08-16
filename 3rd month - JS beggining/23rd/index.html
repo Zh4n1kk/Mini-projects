@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Виселица</title>
+</head>
+
+<body>
+    <script>
+        const gameState = {
+            words: ["банан", "апельсин", "фрукт","абрикос","яблоко","ананас","мандарин","вишня","виноград"],
+            usedWords: [],
+            currentWord: "",
+            hiddenWord: [],
+            attempts: 6,
+            guessedLetter: 0,
+            wrongLetters: 0,
+            guessedWords: 0,
+            
+            randomIndex() {
+                if (this.words.length === 0) {
+                    alert("Слова закончились!");
+                    return null;
+                }
+                let index = Math.floor(Math.random() * this.words.length);
+                this.currentWord = this.words.splice(index, 1)[0];
+                this.usedWords.push(this.currentWord);
+                return this.currentWord;
+            },
+
+            hideWord() {
+                this.hiddenWord = Array(this.currentWord.length).fill("_");
+            },
+
+            updateHiddenWord(letter) {
+                for (let i = 0; i < this.currentWord.length; i++) {
+                    if (this.currentWord[i].toLowerCase() === letter.toLowerCase()) {
+                        this.hiddenWord[i] = this.currentWord[i];
+                    }
+                }
+            },
+
+            hangman(attempts) {
+                const hangmanStages = [
+                    `
+                       -----
+                       |   |
+                           |
+                           |
+                           |
+                        ===
+                    `,
+                    `
+                       -----
+                       |   |
+                      O  |
+                           |
+                           |
+                        ===
+                    `,
+                    `
+                       -----
+                       |   |
+                      O  |
+                       |   |
+                           |
+                        ===
+                    `,
+                    `
+                       -----
+                       |   |
+                      O  |
+                      /|   |
+                           |
+                        ===
+                    `,
+                    `
+                       -----
+                       |   |
+                      O  |
+                      /|\\  |
+                           |
+                        ===
+                    `,
+                    `
+                       -----
+                       |   |
+                      O  |
+                      /|\\  |
+                      /    |
+                        ===
+                    `,
+                    `
+                       -----
+                       |   |
+                      O  |
+                      /|\\  |
+                      / \\  |
+                        ===
+                    `,
+                ];
+                return hangmanStages[6 - attempts];
+            }
+        };
+
+        function getValidLetter() {
+            let letter;
+            while (true) {
+                letter = prompt(`Введите букву для слова, ${gameState.currentWord.length} букв: ${gameState.hiddenWord.join("")}`);
+                if (letter === null) {
+                    alert("Игра завершена пользователем.");
+                    return null;
+                }
+                if (letter.trim() === "") {
+                    alert("Строка не должна быть пустой");
+                    continue;
+                }
+                if (letter.length !== 1) {
+                    alert("Введите только одну букву!");
+                    continue;
+                }
+                return letter.toLowerCase();
+            }
+        }
+        function game() {
+            alert(`Осталось попыток: ${gameState.attempts}\n${gameState.hangman(gameState.attempts)}`);
+            while (true) {
+                if (gameState.words.length === 0) {
+                    if (confirm("Хотите сыграть снова?")) {
+                        gameState.words = [...gameState.usedWords];
+                        gameState.usedWords = [];
+                    } else {
+                        alert("Игра завершена.");
+                        break;
+                    }
+                }
+                const gameWord = gameState.randomIndex();
+                if (!gameWord) break;
+                gameState.hideWord();
+                gameState.attempts = 6;
+                while (gameState.hiddenWord.includes("_") && gameState.attempts > 0) {
+                    const letter = getValidLetter();
+                    if (letter === null) { 
+                        return 
+                    };
+                    if (gameState.currentWord.toLowerCase().includes(letter.toLowerCase())) {
+                        gameState.guessedLetter++;
+                        gameState.updateHiddenWord(letter);
+                    } else {
+                        gameState.attempts--;
+                        gameState.wrongLetters++;
+                        alert(`Осталось попыток: ${gameState.attempts}\n${gameState.hangman(gameState.attempts)}`);
+                    }
+                    if (gameState.attempts === 0) {
+                        alert(`Конец игры! Было загадано слово: "${gameState.currentWord}"`);
+                    }
+                }
+                if (!gameState.hiddenWord.includes("_")) { 
+                    gameState.guessedWords++
+                    alert(`Поздравляем! Вы угадали слово: "${gameState.currentWord}"`);
+                }
+                alert(`${gameState.guessedLetter} угаданных букв\n${gameState.wrongLetters} неправильных букв\nУгаданных слов: ${gameState.guessedWords} `)
+            }
+        }
+        game();
+    </script>
+</body>
+</html>

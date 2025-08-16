@@ -1,0 +1,8 @@
+.list_item {
+    border: 1px solid white;
+    width: 550px;
+    min-height: 100px;
+    text-align: start;
+    text-transform: capitalize;
+    padding: 10px;
+}

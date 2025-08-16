@@ -1,0 +1,29 @@
+.list {
+    overflow-y: scroll;
+    height: 600px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.list::-webkit-scrollbar {
+    background-color: white;
+}
+
+
+.list::-webkit-scrollbar-button:vertical:increment {
+    border-bottom: 1px solid black;
+    height: 10px;
+    display: block;
+}
+
+.list::-webkit-scrollbar-button:vertical:decrement {
+    border-top: 1px solid black;
+    height: 10px;
+    display: block;
+}
+
+.list::-webkit-scrollbar-thumb {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 200px;
+}

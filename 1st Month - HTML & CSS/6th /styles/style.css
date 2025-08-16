@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+.header {
+    background: #373A3C;
+    height: 60px;
+    width: 100%;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header_text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60px;
+    gap: 50px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.xbox_user {
+    padding-left: 30px; 
+    background: url('../images/user.svg');
+    background-repeat: no-repeat;
+    width: 200px;
+}
+.xbox_logo {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.xbox_logo_wrap {
+    width: 100%;
+}
+
+.down_arrow {
+    display: inline-block;
+    width: 12px; 
+    height: 12px; 
+    background: url('../images/down-arrow.svg') no-repeat center;
+    background-size: contain;
+    margin-left: 10px; 
+}
+
+/* PROMO */
+
+.star_wars {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.promo h1 {
+    color: #FFFF;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.promo h2 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.promo_text {
+    display: flex;
+    flex-direction: column;
+    height: 693px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.promo_btn {
+    border:none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn_trailer {
+    background: #8DD83D;    
+    width: 138px;
+    height: 38px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-right: 5px;
+}
+
+.btn_explore {
+    background: #828282;
+    width: 148px;
+    height: 38px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.promo_subcontainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 80px;
+}
+
+.promo_text_container {
+    position: relative;
+    bottom: 30px;
+}
+
+/* Highlight */
+
+.highlight_section {
+    display: block;
+    background: #4F4F4F;
+    height: 865px;
+}
+
+.highlight_block h4 {
+    color: #435766;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.highlight_block h3 {
+    color: #435766;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.highlight_wrap {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.highlight_block {
+    position: relative;
+    width: 348px;
+    background-color: white;
+    height: 420px;
+    /* margin-bottom: 500px; */
+    border-radius: 5px;
+}
+
+.image_wrap {
+    flex-direction: column;
+    width: 100%;
+    height: 187px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image_wrap img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.xbox_one_img img {
+    display: flex;
+    background-size: cover;
+    width: 350px;
+    height: 190px;
+}
+
+.btn_highlight {
+    background: #8DD83D;    
+    width: 278px;
+    height: 60px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    border:none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn_wrap {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.highlight_text {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.highlight_xbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+}
+
+.xbox_icon {
+    background-image: url(../images/xbox-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.highlight_xbox h1 {
+        color: #FFFF;
+        font-family: Roboto;
+        font-size: 48px;
+        font-weight: 400;
+}
+
+
+.highlight_xbox h2 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+/* Design Lab */
+
+.design_lab {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.design_wrapper {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    justify-content: center;
+}
+
+.design_wrap_wrapper {
+    width: 500px;
+}
+.design_wrapper h1 {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.design_wrapper p {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+}
+.btn_gray {
+    background: #828282;
+    width: 207px;
+    height: 60px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-right: 5px;
+}
+.btn_green {
+    background: #8DD83D;    
+    width: 278px;
+    height: 60px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-right: 5px;
+}
+.btn {    
+    border:none;
+    border-radius: 5px;
+    color: #fff;
+}
+.design_button_group {
+    border:none;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+}
+
+/* FOOTER */
+.footer {
+    background: #373A3C;
+    padding: 60px;
+    line-height: 30px;
+}
+.footer_container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer_wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_section h3 {
+    color: #7DD42F;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer_section a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.social_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer_bottom {
+    color: #FFF;
+    margin-top: 50px;
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+}
+.footer_text_flex {
+    display:inline-block
+}
+
+.mic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-around;
+    width: 86.5%;
+    align-items: center;
+}
+
+.footer_bottom .divider {
+    border: none;
+    border-top: 1px solid #FFF;
+    width: 1200px;
+    border: 1px 0px 0px 0px;
+}

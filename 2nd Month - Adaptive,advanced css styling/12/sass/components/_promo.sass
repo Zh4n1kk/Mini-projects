@@ -1,0 +1,72 @@
+/* PROMO */
+
+.promo 
+    &_text 
+        display: flex
+        flex-direction: column
+        height: 685px
+        justify-content: center
+        align-items: flex-end
+        &_container 
+            h1 
+                color: #FFFF
+                font-family: Roboto
+                font-size: 36px
+                font-weight: 400
+            h2 
+                color: #FFF
+                font-family: Roboto
+                font-size: 24px
+                font-weight: 400
+
+    &_subcontainer 
+        display: flex
+        flex-direction: column
+        position: relative
+        right: 80px
+
+    &_btn 
+        color: #fff
+        border-radius: 5px
+
+.btn_trailer 
+    background: #8DD83D    
+    max-width: 138px
+    @include pa-x(8px)
+    font-family: Roboto
+    font-size: 16px
+    font-weight: 400
+    line-height: 21px
+    margin-right: 5px
+
+.btn_explore 
+    background: #828282
+    @include pa-x(8px)
+    font-family: Roboto
+    font-size: 16px
+    font-weight: 400
+    line-height: 21px
+
+.promo_wrap
+    &_content 
+        position: absolute
+        display: flex
+        flex-direction: column
+        left: 60%
+        top: 30%
+    &_btn 
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+
+@include mobile-first-media (1032px)
+    .promo_wrap
+        &_btn
+            flex-direction: column
+            gap: 5px
+@include mobile-first-media (550px)
+.promo_wrap
+    &_content 
+        left:40%
+        top: 10%
+

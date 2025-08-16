@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.user_interactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_interactions_info {
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    align-items: center;
+}
+
+.user_interactions_info img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.user_interactions button {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.user_input input{
+    width: 80%;
+    height: 25px;
+}
+.user_input button {
+    width: 19.5%;
+    height: 25px;
+}
+
+.user_input {
+    padding-bottom: 10px;
+}
+.user_feed {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.feed_name {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.feed_post {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* MODAL START */
+
+.modal_window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+}
+
+.modal_background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal_wrapper {
+    display: none;
+}
+
+.modal_content_header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal_cross {
+    cursor: pointer;
+}
+
+.modal_ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    gap: 5px
+}
+.ingredients img {
+    width: 50px;
+}
+
+.user_edit_name {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px;
+}
+
+.name_hint {
+    max-width: 110px;
+    width: 100%;
+}
+
+.modal_cross {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

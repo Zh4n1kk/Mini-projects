@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const login = prompt('Enter your login')
+        const pass = undefined
+        if (login === 'admin') {
+            const pass = prompt('Enter your password')
+            if ( pass === 'BlackOverlord') {
+                alert("you're in");
+            } else {
+                alert("Wrong password")
+            }
+        } else if (login) {
+            alert('Wrong user')
+        } else {
+            alert('Login cancelled')
+        }
+    </script>
+</body>
+</html>

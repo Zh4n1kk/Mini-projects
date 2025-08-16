@@ -1,0 +1,8 @@
+@mixin mobile-first-media($max-width: 500px)
+    @media screen and (max-width: $max-width)
+        @content 
+
+@mixin pa-x($size)
+    padding-top: $size
+    padding-bottom: $size
+    

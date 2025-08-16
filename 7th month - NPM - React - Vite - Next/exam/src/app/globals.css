@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  border: 1px solid black;
+}
+
+.list {
+  padding: 5px;
+  margin: 5px;
+}
+
+hr {
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.pr {
+  padding-right: 25px;
+}

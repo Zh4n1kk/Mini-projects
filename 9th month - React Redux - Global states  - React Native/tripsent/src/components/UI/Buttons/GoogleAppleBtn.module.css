@@ -1,0 +1,35 @@
+.buttons {
+    top: 821px;
+    left: 20px;
+    display: flex;
+    gap: 15;
+}
+
+.Btn {
+    width: 160px;
+    height: 56px;
+    border-radius: 16px;
+    border-width: 1px;
+    border: 1px solid rgba(207, 213, 219, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Btn img {
+    margin-right: 8px;
+}
+
+.Btn:hover {
+    background-color: #e7e7e7;
+}
+
+.titleBtn {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: bottom
+}
