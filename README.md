@@ -1,3 +1,13 @@
+# 🧠 Mini-Projects Portfolio
+
+Hi! This is a collection of homework and mini-projects during my **Fullstack Web Developer** program at Attractor School. 
+
+> (Still going, 11 month out of 12)
+
+Each month reflects my progress and learning – starting from basic layout and styling, moving into JavaScript, React, TypeScript, backend development, and even mobile apps with React Native.
+
+NOTICE: EVERY FOLDER WITH NUMBER IT'S A DIFFERENT WORK (i.e `1st Month > 2 > index.html` OR `9th Month > 70th`) The number is a count of EVERY project.
+
 ---
 
 ## 🛠️ Tech Stack
@@ -22,18 +32,6 @@
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white" />
 </p>
-
----
-
-# 🧠 Mini-Projects Portfolio
-
-Hi! This is a collection of homework and mini-projects during my **Fullstack Web Developer** program at Attractor School. 
-
-> (Still going, 11 month out of 12)
-
-Each month reflects my progress and learning – starting from basic layout and styling, moving into JavaScript, React, TypeScript, backend development, and even mobile apps with React Native.
-
-NOTICE: EVERY FOLDER WITH NUMBER IT'S A DIFFERENT WORK (i.e `1st Month > 2 > index.html` OR `9th Month > 70th`) The number is a count of EVERY project.
 
 ---
 
