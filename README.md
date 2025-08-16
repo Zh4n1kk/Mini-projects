@@ -82,5 +82,5 @@ Each folder includes 8–10 projects, sorted by topic and month. You’re welcom
 
 **Zhanibek Yskakov**  
 Email: [zhanikknight@gmail.com](mailto:zhanikknight@gmail.com)  
-Telegram: [@zhanikknight](https://t.me/zhanikknight)
+Telegram: [@zh4n1k](https://t.me/zh4n1k)
 GitHub: [github.com/Zh4n1kk](https://github.com/Zh4n1kk) 
